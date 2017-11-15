@@ -13,6 +13,7 @@ var element = document.getElementById('boutonEstimation');
 function calculPrix(){
     var Nuit = document.getElementById("nbNuit").value;
     var resultat = Nuit * 50;
-    console.log(resultat);      
-    document.getElementById("estimation").innerText= "Estimation du prix : " + resultat + " €";
+   /* console.log(resultat); */  
+    var esti = document.getElementById("estimation");
+    esti.innerHTML= "Estimation du prix : " + resultat + " €";
 }

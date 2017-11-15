@@ -11,16 +11,16 @@
         <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <link href="css/monStyle.css" type="text/css" rel="stylesheet"/>
     </head>
-    
+
     <body>
-       <!--Navbar-->
+        <!--Navbar-->
         <nav class="grey" role="navigation">
             <div class="nav-wrapper container">
                 <a id="logo-container" class="brand-logo"><img src="school.png"></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="Maison.html">Maison</a></li>
                     <li><a href="region.html">Région</a></li>
-                    <!--<li><a href="formulaire.html">Réservation</a></li>-->
+                    <li><a href="formulaire.html">Réservation</a></li>
                 </ul>
 
                 <ul id="nav-mobile" class="side-nav">
@@ -41,7 +41,7 @@
                         <div class="row">
                             <div class="input-field col s6">
                                 <i class="material-icons prefix">account_circle</i>
-                                <input id="icon_prefix" type="text" class="validate">
+                                <input id="icon_prefix" type="text" class="validate" required>
                                 <label for="icon_prefix" class="active">Nom</label>
                             </div>
                             <div class="input-field col s6">
@@ -59,18 +59,18 @@
                             </div>
                             <div class="input-field col s6">
                                 <i class="material-icons prefix">email</i>
-                                <input id="email" type="email" class="validate">
+                                <input id="email" type="email" class="validate" required>
                                 <label for="email" class="active">Email</label>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="input-field col s4">
+                            <div class="input-field col s12 m4">
                                 <input id="nbNuit" type="number" class="validate">
                                 <label for="nbNuit" class="active">Nombre de nuits</label>
                             </div>
                             <!--Menu déroulant nombre personnes-->
-                            <div class="input-field col s4"> 
+                            <div class="input-field col s12 m4"> 
                                 <select>
                                     <option value="" disabled selected>Nombre de personnes</option>
                                     <option value="1">1</option>
@@ -81,7 +81,7 @@
                                 <label>Nombre de personnes</label>
                             </div>
                             <!--Menu déroulant région-->
-                            <div class="input-field col s4">
+                            <div class="input-field col s12 m4">
                                 <select>
                                     <option value="" disabled selected>Région d'origine</option>
                                     <option value="1">Alsace</option>
@@ -119,15 +119,15 @@
                                     <legend>Veuillez sélectionner vos options :</legend>
                                     <div>
                                         <input type="checkbox" id="parking" name="interest" value="parking">
-                                        <label for="parking">Parking</label>
+                                        <label for="parking" style="color:black">Parking</label>
                                     </div>
                                     <div>
                                         <input type="checkbox" id="animal" name="interest" value="animal">
-                                        <label for="animal">Animal</label>
+                                        <label for="animal" style="color:black">Animal</label>
                                     </div>
                                     <div>
                                         <input type="checkbox" id="fumeur" name="interest" value="fumeur">
-                                        <label for="fumeur">Fumeur</label>
+                                        <label for="fumeur" style="color:black">Fumeur</label>
                                     </div>
                                 </fieldset>
                             </div>
@@ -160,10 +160,8 @@
                         </div>
                         <!--Affichage estimation du prix-->
                         <div class="col s3">
-                                   <p>
-                                    <input type="text" name="estimation" id="estimation"> 
-                                    <label for="estimation">Estimation</label>
-                                </p>
+                            <div id="estimation"></div>                                    
+
                         </div>
 
 
